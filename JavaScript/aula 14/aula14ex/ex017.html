@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <link rel="stylesheet" href="ex017.css">
+
+</head>
+<body>
+    <header>
+<h1>Tabuada</h1>
+    </header>
+
+    <section>
+<div>
+    <span id='tabuada'></span>
+</div>
+<div>
+    <span id='resultado'></span>
+    <input type="number" id="numero" placeholder="Digite um número">
+    <button onclick="calcularTabuada()">Gerar Tabuada</button>
+</div>
+    </section>
+<span>Resultado Final</span>
+    <footer>
+        <p>&copy;Cursoemvideo</p>
+    </footer>
+<script src="ex017.js"></script>
+<script>
+function calcularTabuada() {
+    const numero = Number(document.getElementById('numero').value);
+    const tabuada = document.getElementById('tabuada');
+    const resultado = document.getElementById('resultado');
+    let i = 1;
+    let resultadoFinal = '';
+    while (i <= 10) {
+        resultadoFinal += `${numero} x ${i} = ${numero * i}<br>`;
+        i++;
+    }
+    tabuada.innerHTML = `Tabuada do ${numero}:`;
+    resultado.innerHTML = resultadoFinal;
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contador</title>
+  <link rel="stylesheet" href="ex016.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Contador Personalizado</h1>
+    <script>
+      function contar() {
+        console.log("Script carregado com sucesso!");
+      }
+    </script>
+    <div class="inputs">
+      <label for="inicio">Início:</label>
+      <input type="number" id="inicio" placeholder="Digite o início">
+
+      <label for="fim">Fim:</label>
+      <input type="number" id="fim" placeholder="Digite o fim">
+
+      <label for="passo">Passo:</label>
+      <input type="number" id="passo" placeholder="Digite o passo">
+    </div>
+
+    <button id="btnContar"onclick="contar()">Contar</button>
+
+    <div id="resultado"></div>
+  </div>
+
+  <script src="ex016.js"></script>
+</body>
+</html>
